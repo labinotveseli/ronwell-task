@@ -46,7 +46,7 @@ files, and initial directory structure.
 
 ## Code Quality Tools
 
-### For maintaining code quality, we utilize the following tools:
+### For maintaining code quality, the following tools were utilized:
 
 - **Prettier:** Ensures consistent code formatting.
 - **ESLint:** Lints JavaScript and TypeScript code to identify and fix potential
