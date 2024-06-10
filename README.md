@@ -21,9 +21,10 @@ files, and initial directory structure.
 
 ## Setup
 
-<h4>Prerequisites</h4>
- - Node.js installed on your machine
- - Docker installed (if using Docker for PostgreSQL)
+### Prerequisites
+
+- Node.js installed on your machine
+- Docker (for running PostgreSQL database locally with Docker Compose)
 
 ## Clone the Repository
 
@@ -39,13 +40,6 @@ files, and initial directory structure.
 - npm start
 - The application will start on <b>port 3000</b> by default:
   http://localhost:3000/products
-
-## Start the PostgreSQL database using Docker Compose
-
-- Docker should be installed, and you can use the provided Docker Compose file
-  to set up a PostgreSQL database locally: <b>docker compose up -d</b>
-- This command will start a PostgreSQL container with the default credentials
-  ('postgres' username and 'postgres' password) on port 5432.
 
 ## Start the PostgreSQL database using Docker Compose
 
