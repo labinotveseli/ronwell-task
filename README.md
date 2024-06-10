@@ -23,7 +23,10 @@ files, and initial directory structure.
 
 ### Prerequisites
 
-- Node.js installed on your machine
+<b>To proceed with the setup, ensure you have the following installed:</b>
+
+- Node.js
+- PostgreSQL
 - Docker (for running PostgreSQL database locally with Docker Compose)
 
 ## Clone the Repository
@@ -63,7 +66,7 @@ files, and initial directory structure.
 - **Get all products**: <b>http://localhost:3000/products</b>
 - **Get Product by Id**: <b>http://localhost:3000/products/1</b>
 
-## Chosen ORM: TypeORM; simplifies database interactions BY:
+## Chosen ORM: TypeORM; simplifies database interactions by:
 
 - **Entity Definition:** TypeORM allows defining entities using TypeScript
   classes. In the Product class, the @Entity() decorator marks it as an entity,
