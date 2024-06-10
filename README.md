@@ -44,6 +44,15 @@ files, and initial directory structure.
 - The application will start on <b>port 3000</b> by default:
   http://localhost:3000/products
 
+## Code Quality Tools
+
+### For maintaining code quality, we utilize the following tools:
+
+- **Prettier:** Ensures consistent code formatting.
+- **ESLint:** Lints JavaScript and TypeScript code to identify and fix potential
+  issues.
+- **Jest:** JavaScript testing framework for writing and running tests.
+
 ## Start the PostgreSQL database using Docker Compose
 
 - Docker should be installed, and you can use the provided Docker Compose file
