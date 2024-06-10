@@ -1,4 +1,3 @@
-import 'reflect-metadata'
 import { DataSource } from 'typeorm'
 import { Product } from './models/Product'
 
@@ -15,3 +14,7 @@ export const AppDataSource = new DataSource({
   migrations: [],
   subscribers: []
 })
+
+AppDataSource.initialize().catch(error =>
+  console.log('Error during Data Source initialization:', error)
+)
