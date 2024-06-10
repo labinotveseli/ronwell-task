@@ -1,4 +1,4 @@
-import * as express from 'express'
+import express from 'express'
 import * as bodyParser from 'body-parser'
 import { Request, Response } from 'express'
 import { AppDataSource } from './data-source'
@@ -11,7 +11,7 @@ AppDataSource.initialize()
     app.use(bodyParser.json())
 
     Routes.forEach(route => {
-      app[route.method](
+      ;(app as any)[route.method](
         route.route,
         async (req: Request, res: Response, next: Function) => {
           try {
@@ -33,6 +33,8 @@ AppDataSource.initialize()
     app.listen(3000)
 
     const productRepository = AppDataSource.getRepository(Product)
+
+    await productRepository.clear()
 
     await productRepository.save(
       productRepository.create({

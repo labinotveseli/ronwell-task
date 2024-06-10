@@ -1,6 +1,15 @@
 import { ProductController } from './controller/ProductController'
 
-export const Routes = [
+type HttpMethod = 'get' | 'post' | 'put' | 'delete'
+
+interface Route {
+  method: HttpMethod
+  route: string
+  controller: typeof ProductController
+  action: string
+}
+
+export const Routes: Route[] = [
   {
     method: 'get',
     route: '/products',

@@ -3,17 +3,17 @@ import { Entity, PrimaryGeneratedColumn, Column } from 'typeorm'
 @Entity()
 export class Product {
   @PrimaryGeneratedColumn()
-  id: number
+  id!: number
 
-  @Column()
-  name: string
+  @Column({ type: 'varchar' })
+  name!: string
 
-  @Column()
-  description: string
+  @Column({ type: 'text', nullable: true })
+  description!: string
 
-  @Column('decimal', { precision: 10, scale: 2 })
-  price: number
+  @Column({ type: 'decimal', precision: 10, scale: 2 })
+  price!: number
 
-  @Column('int')
-  inventory: number
+  @Column({ type: 'int' })
+  inventory!: number
 }
